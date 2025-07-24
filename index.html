@@ -14,7 +14,7 @@
 				<strong>
 					<p>Total Balance</p>
 				</strong>
-				<p>$999.99</p>
+				<p id="total">0.00</p>
 			</div>
 
 			<div class="balance">
@@ -22,12 +22,11 @@
 					<strong>
 						<p>Current Cash:</p>
 					</strong>
-					<p>$100</p>
+					<p id="current-cash-value">$100</p>
 				</div>
 
 				<div>
-					<input type="text" placeholder="$999.99" />
-					<input type="button" value="Update" />
+					<input type="number" id="cash" placeholder="$999.99" />
 				</div>
 			</div>
 
@@ -36,12 +35,11 @@
 					<strong>
 						<p>Current Bank:</p>
 					</strong>
-					<p>$100</p>
+					<p id="current-bank-value">$100</p>
 				</div>
 
 				<div>
-					<input type="text" placeholder="$999.99" />
-					<input type="button" value="Update" />
+					<input type="number" id="bank" placeholder="$999.99" />
 				</div>
 			</div>
 
@@ -50,13 +48,16 @@
 					<strong>
 						<p>Current M N:</p>
 					</strong>
-					<p>$100</p>
+					<p id="current-network-value">$100</p>
 				</div>
 
 				<div>
-					<input type="text" placeholder="$999.99" />
-					<input type="button" value="Update" />
+					<input type="number" id="network" placeholder="$999.99" />
 				</div>
+			</div>
+
+			<div>
+				<input type="button" id="update-totals" value="Update Totals" />
 			</div>
 
 			<div>
@@ -104,5 +105,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="app.js"></script>
 	</body>
 </html>
