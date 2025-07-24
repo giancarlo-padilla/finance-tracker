@@ -50,7 +50,7 @@ input[type="text"] {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px0;
+	margin: 5px;
 	border: 1px solid black;
 }
 
@@ -58,8 +58,8 @@ input[type="text"] {
 	width: 100%;
 	text-align: center;
 	padding: 2px 0;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	/* border-left: 1px solid black;
+	border-right: 1px solid black; */
 }
 
 .entry div p {
