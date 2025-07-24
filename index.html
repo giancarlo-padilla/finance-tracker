@@ -4,28 +4,104 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Finance Tracker</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="main-container">
 			<h1>My Finances</h1>
-			<p>Current Total Money: $600</p>
 
-			<div class="current-cash">
-				<p>Current Cash:</p>
-				<p>$100</p>
-				<input type="text" placeholder="Update" />
+			<div class="total-balance">
+				<strong>
+					<p>Total Balance</p>
+				</strong>
+				<p>$999.99</p>
 			</div>
 
-			<div class="current-bank">
-				<p>Current Bank:</p>
-				<p>$100</p>
-				<input type="text" placeholder="Update" />
+			<div class="balance">
+				<div>
+					<strong>
+						<p>Current Cash:</p>
+					</strong>
+					<p>$100</p>
+				</div>
+
+				<div>
+					<input type="text" placeholder="$999.99" />
+					<input type="button" value="Update" />
+				</div>
 			</div>
 
-			<div class="current-money-net">
-				<p>Current Money Net:</p>
-				<p>$100</p>
-				<input type="text" placeholder="Update" />
+			<div class="balance">
+				<div>
+					<strong>
+						<p>Current Bank:</p>
+					</strong>
+					<p>$100</p>
+				</div>
+
+				<div>
+					<input type="text" placeholder="$999.99" />
+					<input type="button" value="Update" />
+				</div>
+			</div>
+
+			<div class="balance">
+				<div>
+					<strong>
+						<p>Current M N:</p>
+					</strong>
+					<p>$100</p>
+				</div>
+
+				<div>
+					<input type="text" placeholder="$999.99" />
+					<input type="button" value="Update" />
+				</div>
+			</div>
+
+			<div>
+				<input type="button" value="Add History Entry" />
+			</div>
+
+			<div class="history">
+				<div class="entry">
+					<div>
+						<strong>
+							<p>Entry #:</p>
+						</strong>
+						<p>1</p>
+					</div>
+					<div>
+						<strong>
+							<p>Date:</p>
+						</strong>
+						<p>10/21/2025</p>
+					</div>
+					<div>
+						<strong>
+							<p>Cash:</p>
+						</strong>
+						<p>$100</p>
+					</div>
+					<div>
+						<strong>
+							<p>Bank:</p>
+						</strong>
+						<p>$100</p>
+					</div>
+					<div>
+						<strong>
+							<p>Money Net:</p>
+						</strong>
+						<p>$100</p>
+					</div>
+					<div>
+						<strong>
+							<p>Total:</p>
+						</strong>
+						<p>$300</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
