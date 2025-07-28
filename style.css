@@ -1,20 +1,36 @@
+:root {
+	--background-color: #222831; /* A shade of blue */
+	--panel-color: #393e46; /* A shade of blue */
+	--text-color: #eeeeee; /* A shade of white */
+	--accent-color: #00adb5; /* A shade of blue */
+}
+
 * {
 	margin: 0;
-	padding: 0;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 16px;
-	/* border: 1px solid black; */
+	font-family: "Roboto";
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-weight: 300;
+	box-sizing: border-box;
 }
 
 input[type="button"] {
-	padding: 2px 5px;
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	background-color: var(--accent-color);
+}
+
+.update-btn-section {
+	display: flex;
+	justify-content: end;
 }
 
 input[type="number"] {
+	border: 1px solid var(--text-color);
 	width: 85px;
 	height: 30px;
-	border: 1px solid rgb(96, 96, 96);
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 0 5px 0 0;
 	text-align: end;
 }
@@ -24,9 +40,7 @@ input[type="number"] {
 	padding: 20px;
 	gap: 20px;
 	flex-direction: column;
-	width: 400px;
 	align-items: center;
-	justify-self: center;
 }
 
 .main-container h1 {
@@ -34,18 +48,21 @@ input[type="number"] {
 }
 
 .balance {
-	border: 2px solid black;
-	border-radius: 4px;
-	padding: 10px;
 	align-items: center;
+	padding: 10px;
+	background-color: var(--panel-color);
+	border-radius: 5px;
+}
+
+.balance-section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
 }
 
 .total-bal-number {
 	display: flex;
-}
-
-.total-bal-number p {
-	font-size: 24px;
 }
 
 .current-bal-number {
@@ -66,7 +83,15 @@ input[type="number"] {
 
 .balance div {
 	display: flex;
-	width: auto;
+	background-color: var(--panel-color);
+}
+
+.balance p {
+	background-color: var(--panel-color);
+}
+
+.total-balance p {
+	font-size: 24px;
 }
 
 .history {
@@ -78,7 +103,7 @@ input[type="number"] {
 	justify-content: space-between;
 	align-items: center;
 	margin: 5px;
-	border: 1px solid black;
+	border: 1px solid var(--text-color);
 	border-radius: 4px;
 }
 

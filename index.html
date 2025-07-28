@@ -5,80 +5,78 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Finance Tracker</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="main-container">
 			<h1>My Finances</h1>
 
 			<div class="total-balance">
-				<strong>
-					<p>Total Balance</p>
-				</strong>
+				<p>Total Balance</p>
 				<div class="total-bal-number">
 					<p>$</p>
 					<p id="total">0.00</p>
 				</div>
 			</div>
 
-			<div class="balance">
-				<div>
-					<strong>
+			<div class="balance-section">
+				<div class="balance">
+					<div>
 						<p>Current Cash:</p>
-					</strong>
-					<div class="current-bal-number">
-						<p>$</p>
-						<p id="current-cash-value">0</p>
+						<div class="current-bal-number">
+							<p>$</p>
+							<p id="current-cash-value">0</p>
+						</div>
+					</div>
+
+					<div>
+						<input type="number" id="cash" placeholder="$999" min="0" />
 					</div>
 				</div>
 
-				<div>
-					<input type="number" id="cash" placeholder="$999" min="0" />
-				</div>
-			</div>
-
-			<div class="balance">
-				<div>
-					<strong>
+				<div class="balance">
+					<div>
 						<p>Current Bank:</p>
-					</strong>
-					<div class="current-bal-number">
-						<p>$</p>
-						<p id="current-bank-value">0</p>
+						<div class="current-bal-number">
+							<p>$</p>
+							<p id="current-bank-value">0</p>
+						</div>
+					</div>
+
+					<div>
+						<input type="number" id="bank" placeholder="$999" min="0" />
 					</div>
 				</div>
 
-				<div>
-					<input type="number" id="bank" placeholder="$999" min="0" />
-				</div>
-			</div>
-
-			<div class="balance">
-				<div>
-					<strong>
+				<div class="balance">
+					<div>
 						<p>Current Network:</p>
-					</strong>
-					<div class="current-bal-number">
-						<p>$</p>
-						<p id="current-network-value">0</p>
+						<div class="current-bal-number">
+							<p>$</p>
+							<p id="current-network-value">0</p>
+						</div>
+					</div>
+
+					<div>
+						<input type="number" id="network" placeholder="$999" min="0" />
 					</div>
 				</div>
 
-				<div>
-					<input type="number" id="network" placeholder="$999" min="0" />
+				<div class="update-btn-section">
+					<input type="button" id="update-totals" value="Update Totals" />
 				</div>
-			</div>
-
-			<div>
-				<input type="button" id="update-totals" value="Update Totals" />
 			</div>
 
 			<div>
 				<input type="button" id="add-history" value="Add History Entry" />
 			</div>
 
-			<div class="history">
-				<!-- <div class="entry"></div> -->
-			</div>
+			<div class="history"></div>
 		</div>
 		<script src="app.js"></script>
 	</body>
