@@ -14,7 +14,10 @@
 				<strong>
 					<p>Total Balance</p>
 				</strong>
-				<p id="total">0.00</p>
+				<div class="total-bal-number">
+					<p>$</p>
+					<p id="total">0.00</p>
+				</div>
 			</div>
 
 			<div class="balance">
@@ -22,11 +25,14 @@
 					<strong>
 						<p>Current Cash:</p>
 					</strong>
-					<p id="current-cash-value">$100</p>
+					<div class="current-bal-number">
+						<p>$</p>
+						<p id="current-cash-value">0</p>
+					</div>
 				</div>
 
 				<div>
-					<input type="number" id="cash" placeholder="$999.99" />
+					<input type="number" id="cash" placeholder="$999" min="0" />
 				</div>
 			</div>
 
@@ -35,24 +41,30 @@
 					<strong>
 						<p>Current Bank:</p>
 					</strong>
-					<p id="current-bank-value">$100</p>
+					<div class="current-bal-number">
+						<p>$</p>
+						<p id="current-bank-value">0</p>
+					</div>
 				</div>
 
 				<div>
-					<input type="number" id="bank" placeholder="$999.99" />
+					<input type="number" id="bank" placeholder="$999" min="0" />
 				</div>
 			</div>
 
 			<div class="balance">
 				<div>
 					<strong>
-						<p>Current M N:</p>
+						<p>Current Network:</p>
 					</strong>
-					<p id="current-network-value">$100</p>
+					<div class="current-bal-number">
+						<p>$</p>
+						<p id="current-network-value">0</p>
+					</div>
 				</div>
 
 				<div>
-					<input type="number" id="network" placeholder="$999.99" />
+					<input type="number" id="network" placeholder="$999" min="0" />
 				</div>
 			</div>
 
@@ -65,7 +77,7 @@
 			</div>
 
 			<div class="history">
-				<div class="entry"></div>
+				<!-- <div class="entry"></div> -->
 			</div>
 		</div>
 		<script src="app.js"></script>
